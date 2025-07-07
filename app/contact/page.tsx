@@ -64,8 +64,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 87654 32109</p>
+                    <p className="text-gray-600">+91 8977002911</p>
+                    <p className="text-gray-600">+91 9121048296</p>
                   </div>
                 </div>
 
@@ -75,8 +75,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">info@bookmypujari.com</p>
-                    <p className="text-gray-600">support@bookmypujari.com</p>
+                    <p className="text-gray-600">bmpoffice24x7@gmail.com</p>
                   </div>
                 </div>
 
@@ -88,9 +87,9 @@ export default function Contact() {
                     <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
                     <p className="text-gray-600">
                       BookMyPujari Technologies Pvt. Ltd.<br />
-                      A-204, Business Hub<br />
-                      Andheri East, Mumbai - 400069<br />
-                      Maharashtra, India
+                      Manchirevula<br />
+                      Narsingi, Hyderabad - 500075<br />
+                      Telangana, India
                     </p>
                   </div>
                 </div>
@@ -248,7 +247,7 @@ export default function Contact() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Find Us</h2>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6548892249296!2d72.8537647147772!3d19.11543798705894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x3c2a8e8e2b7b7c0c!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647856234567!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60918.99895303006!2d78.26241499008748!3d17.390782724996512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb944119bb56f7%3A0xe4bc36bdf28bde0b!2sNarsingi%2C%20Telangana!5e0!3m2!1sen!2sin!4v1751918480386!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

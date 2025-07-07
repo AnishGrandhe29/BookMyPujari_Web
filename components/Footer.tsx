@@ -54,26 +54,26 @@ export default function Footer() {
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-phone-line text-orange-400"></i>
                 </div>
-                <span className="text-gray-400">+91 98765 43210</span>
+                <span className="text-gray-400">+91 8977002911</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-mail-line text-orange-400"></i>
                 </div>
-                <span className="text-gray-400">info@bookmypujari.com</span>
+                <span className="text-gray-400">bmpoffice24x7@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-5 h-5 flex items-center justify-center">
                   <i className="ri-map-pin-line text-orange-400"></i>
                 </div>
-                <span className="text-gray-400">Mumbai, India</span>
+                <span className="text-gray-400">Hyderabad, India</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">&copy; 2024 BookMyPujari. All rights reserved.</p>
+          <p className="text-gray-400">&copy; 2025 BookMyPujari. All rights reserved.</p>
         </div>
       </div>
 

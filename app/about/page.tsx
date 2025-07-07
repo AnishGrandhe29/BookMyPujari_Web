@@ -2,31 +2,32 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image'
 
 const teamMembers = [
   {
-    name: 'Amit Sharma',
+    name: 'Anish Grandhe',
     role: 'Founder & CEO',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20businessman%20in%20traditional%20formal%20attire%2C%20confident%20and%20trustworthy%20appearance%2C%20clean%20background%2C%20portrait%20style%2C%20middle-aged%2C%20friendly%20smile%2C%20leadership%20qualities%2C%20modern%20traditional%20blend%2C%20natural%20lighting&width=300&height=300&seq=team001&orientation=squarish',
+    image: '/images/linkedin.png',
     description: 'Passionate about connecting traditional Hindu culture with modern technology'
   },
   {
-    name: 'Priya Patel',
-    role: 'Head of Operations',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20businesswoman%20in%20elegant%20traditional%20attire%2C%20confident%20and%20approachable%20expression%2C%20clean%20background%2C%20portrait%20style%2C%20friendly%20smile%2C%20leadership%20qualities%2C%20modern%20professional%20look%2C%20natural%20lighting&width=300&height=300&seq=team002&orientation=squarish',
-    description: 'Ensures seamless service delivery and customer satisfaction'
+    name: 'Dhiraj Monthri',
+    role: 'Co-Founder',
+    image: '/images/dhiraj.png',
+    description: 'Passionate about connecting traditional Hindu culture with modern technology'
   },
   {
-    name: 'Rajesh Kumar',
-    role: 'Head of Priest Relations',
-    image: 'https://readdy.ai/api/search-image?query=Wise%20Indian%20man%20in%20traditional%20attire%2C%20spiritual%20and%20knowledgeable%20appearance%2C%20clean%20background%2C%20portrait%20style%2C%20trustworthy%20expression%2C%20traditional%20clothing%2C%20peaceful%20demeanor%2C%20natural%20lighting&width=300&height=300&seq=team003&orientation=squarish',
-    description: 'Manages our network of verified priests and maintains quality standards'
+    name: 'Eshwar Grandhe',
+    role: 'CTO',
+    image: '/images/eshwar.jpg',
+    description: 'Tech innovator driving seamless booking experiences through reliable, user-friendly platforms.'
   },
   {
-    name: 'Deepika Singh',
-    role: 'Customer Success Manager',
-    image: 'https://readdy.ai/api/search-image?query=Professional%20Indian%20woman%20in%20modern%20traditional%20attire%2C%20warm%20and%20helpful%20expression%2C%20clean%20background%2C%20portrait%20style%2C%20customer%20service%20oriented%2C%20friendly%20demeanor%2C%20approachable%20appearance%2C%20natural%20lighting&width=300&height=300&seq=team004&orientation=squarish',
-    description: 'Dedicated to ensuring every customer has a perfect ceremony experience'
+    name: 'Bhavana Kasula',
+    role: 'COO',
+    image: '/images/bhavana.png',
+    description: 'Operations expert ensuring smooth, trusted service delivery for every sacred ceremony.'
   }
 ];
 
@@ -57,7 +58,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+     
+
       <section 
         className="relative bg-cover bg-center py-20"
         style={{
