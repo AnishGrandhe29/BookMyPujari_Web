@@ -22,7 +22,7 @@ export default function PriestPartner() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("");
