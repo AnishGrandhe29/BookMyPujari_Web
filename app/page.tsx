@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import PopularServices from '@/components/PopularServices';
-import Testimonials from '@/components/Testimonials';
+
 import HowItWorks from '@/components/HowItWorks';
 import AboutSnippet from '@/components/AboutSnippet';
 import ContactForm from '@/components/ContactForm';
@@ -18,7 +18,6 @@ export default function Home() {
       <WhyChooseUs />
       <PopularServices />
       <HowItWorks />
-      <Testimonials />
       <AboutSnippet />
       <ContactForm />
       <Footer />

@@ -93,21 +93,15 @@ export default function About() {
               </p>
               
               <p className="mb-6">
-                Founded in 2023, our platform emerged from the personal experiences of our founders who faced difficulties 
+                Founded in 2025, our platform emerged from the personal experiences of our founders who faced difficulties 
                 in finding authentic, knowledgeable priests for their family ceremonies. We recognized that while technology 
                 had simplified many aspects of our lives, the sacred domain of spiritual ceremonies remained largely untouched 
                 by digital innovation.
               </p>
               
               <p className="mb-6">
-                Today, BookMyPujari serves thousands of families across India, connecting them with over 500 verified priests 
-                who are not just knowledgeable in scriptures and rituals, but also understand the emotional significance of 
-                each ceremony. We believe that every family deserves access to authentic spiritual experiences, regardless of 
-                their location or familiarity with traditional practices.
-              </p>
-              
-              <p className="mb-8">
-                Our mission extends beyond just booking services – we're preserving and promoting Hindu traditions for future 
+                We believe that every family deserves access to authentic spiritual experiences, regardless of 
+                their location or familiarity with traditional practices.Our mission extends beyond just booking services – we're preserving and promoting Hindu traditions for future 
                 generations while making them accessible in today's digital age. Every ceremony facilitated through our platform 
                 is a step towards keeping our rich cultural heritage alive.
               </p>
@@ -115,16 +109,13 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-center">
               <div>
-                <div className="text-4xl font-bold text-orange-600 mb-2">500+</div>
-                <p className="text-gray-600">Verified Priests</p>
+                
               </div>
               <div>
-                <div className="text-4xl font-bold text-orange-600 mb-2">10,000+</div>
-                <p className="text-gray-600">Ceremonies Completed</p>
+                
               </div>
               <div>
-                <div className="text-4xl font-bold text-orange-600 mb-2">50+</div>
-                <p className="text-gray-600">Cities Served</p>
+                
               </div>
             </div>
           </div>
@@ -204,10 +195,7 @@ export default function About() {
             we invite you to be part of our growing community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
-              Book a Ceremony
-            </button>
-            <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 hover:text-white transition-colors whitespace-nowrap cursor-pointer">
+            <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 hover:text-white transition-colors whitespace-nowrap cursor-pointer" onClick={() => window.location.href = '/priest-partner'}>
               Become a Priest Partner
             </button>
           </div>

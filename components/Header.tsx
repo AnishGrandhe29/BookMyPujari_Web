@@ -32,9 +32,6 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-orange-600 transition-colors whitespace-nowrap cursor-pointer">
               Contact
             </Link>
-            <button className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
-              Book Now
-            </button>
           </nav>
 
           <button 
@@ -62,9 +59,6 @@ export default function Header() {
               <Link href="/contact" className="text-gray-700 hover:text-orange-600 transition-colors cursor-pointer">
                 Contact
               </Link>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors w-fit whitespace-nowrap cursor-pointer">
-                Book Now
-              </button>
             </div>
           </div>
         )}

@@ -108,6 +108,7 @@ const categories = ['All', 'Home', 'Worship', 'Wedding', 'Festival'];
 export default function Services() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedService, setSelectedService] = useState(null);
 
   const filteredServices = allServices.filter(service => {
     const matchesCategory = selectedCategory === 'All' || service.category === selectedCategory;
@@ -189,13 +190,13 @@ export default function Services() {
                       </div>
                       <span>{service.duration}</span>
                     </div>
-                    <span className="text-2xl font-bold text-orange-600">
-                      {service.price}
-                    </span>
                   </div>
-                  <button className="w-full bg-orange-600 text-white py-2 px-4 rounded-full hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
-                    Book Now
+                  <button className="w-full bg-orange-600 text-white py-2 px-4 rounded-full hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer" onClick={() => setSelectedService(service)}>
+                    About this Service
                   </button>
+                  <p className="mt-2 text-center text-sm text-gray-700">
+                    For priest services, contact us at <a href="mailto:bmpoffice24x7@gmail.com" className="text-orange-600 underline">bmpoffice24x7@gmail.com</a>, 8977002911
+                  </p>
                 </div>
               </div>
             ))}
@@ -212,6 +213,23 @@ export default function Services() {
           )}
         </div>
       </section>
+
+      {/* Modal for service details */}
+      {selectedService && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+            <button className="absolute top-2 right-2 text-gray-500 hover:text-orange-600 text-2xl" onClick={() => setSelectedService(null)}>&times;</button>
+            <img src={selectedService.image} alt={selectedService.title} className="w-full h-48 object-cover object-top rounded mb-4" />
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedService.title}</h3>
+            <span className="inline-block bg-orange-100 text-orange-600 px-2 py-1 rounded-full text-xs font-medium mb-2">{selectedService.category}</span>
+            <p className="text-gray-700 mb-2">{selectedService.description}</p>
+            <div className="flex items-center space-x-2 text-sm text-gray-500 mb-2">
+              <i className="ri-time-line"></i>
+              <span>Duration: {selectedService.duration || 'N/A'}</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>

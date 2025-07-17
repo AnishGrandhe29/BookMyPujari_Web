@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 const services = [
   {
     title: 'Griha Pravesh',
@@ -40,6 +42,8 @@ const services = [
 ];
 
 export default function PopularServices() {
+  const [selectedService, setSelectedService] = useState(null);
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -67,13 +71,13 @@ export default function PopularServices() {
                 <p className="text-gray-600 mb-4">
                   {service.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <span className="text-2xl font-bold text-orange-600">
-                    {service.price}
-                  </span>
-                  <button className="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
-                    Book Now
+                <div className="flex flex-col items-center">
+                  <button className="w-full bg-orange-600 text-white py-2 px-4 rounded-full hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer" onClick={() => setSelectedService(service)}>
+                    About this Service
                   </button>
+                  <p className="mt-2 text-center text-sm text-gray-700">
+                    For priest services, contact us at <a href="mailto:bmpoffice24x7@gmail.com" className="text-orange-600 underline">bmpoffice24x7@gmail.com</a>, 8977002911
+                  </p>
                 </div>
               </div>
             </div>
@@ -81,11 +85,28 @@ export default function PopularServices() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
+          <button
+            className="bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer"
+            onClick={() => window.location.href = '/services'}
+          >
             Explore All Services
           </button>
         </div>
       </div>
+
+      {/* Modal for service details */}
+      {selectedService && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+            <button className="absolute top-2 right-2 text-gray-500 hover:text-orange-600 text-2xl" onClick={() => setSelectedService(null)}>&times;</button>
+            <img src={selectedService.image} alt={selectedService.title} className="w-full h-48 object-cover object-top rounded mb-4" />
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedService.title}</h3>
+            <span className="inline-block bg-orange-100 text-orange-600 px-2 py-1 rounded-full text-xs font-medium mb-2">{selectedService.category}</span>
+            <div className="mb-2 text-gray-700"><b>Description:</b> {selectedService.description}</div>
+            <div className="mb-2 text-gray-700"><b>Duration:</b> {selectedService.duration}</div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

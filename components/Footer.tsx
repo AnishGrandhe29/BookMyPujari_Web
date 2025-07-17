@@ -76,14 +76,6 @@ export default function Footer() {
           <p className="text-gray-400">&copy; 2025 BookMyPujari. All rights reserved.</p>
         </div>
       </div>
-
-      <div className="fixed bottom-6 right-6 z-50">
-        <button className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors cursor-pointer">
-          <div className="w-6 h-6 flex items-center justify-center">
-            <i className="ri-whatsapp-line text-xl"></i>
-          </div>
-        </button>
-      </div>
     </footer>
   );
 }

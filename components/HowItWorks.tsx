@@ -60,12 +60,6 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-700 transition-colors whitespace-nowrap cursor-pointer">
-            Start Booking Now
-          </button>
-        </div>
       </div>
     </section>
   );

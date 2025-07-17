@@ -14,20 +14,6 @@ export default function AboutSnippet() {
             of each ritual. Whether it's a simple daily puja or a grand celebration, we ensure that every ceremony 
             is performed with devotion, knowledge, and respect for tradition.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">500+</div>
-              <p className="text-gray-600">Verified Priests</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">10,000+</div>
-              <p className="text-gray-600">Happy Families</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-orange-600 mb-2">50+</div>
-              <p className="text-gray-600">Types of Ceremonies</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
