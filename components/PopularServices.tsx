@@ -3,7 +3,15 @@
 import React from "react";
 import { useState } from 'react';
 
-const services = [
+// Define the service type
+type Service = {
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+};
+
+const services: Service[] = [
   {
     title: 'Griha Pravesh',
     description: 'Sacred housewarming ceremony for new homes with traditional rituals',
@@ -43,7 +51,8 @@ const services = [
 ];
 
 export default function PopularServices() {
-  const [selectedService, setSelectedService] = useState(null);
+  // Fix: Explicitly type the state to accept Service or null
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -102,9 +111,8 @@ export default function PopularServices() {
             <button className="absolute top-2 right-2 text-gray-500 hover:text-orange-600 text-2xl" onClick={() => setSelectedService(null)}>&times;</button>
             <img src={selectedService.image} alt={selectedService.title} className="w-full h-48 object-cover object-top rounded mb-4" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedService.title}</h3>
-            <span className="inline-block bg-orange-100 text-orange-600 px-2 py-1 rounded-full text-xs font-medium mb-2">{selectedService.category}</span>
             <div className="mb-2 text-gray-700"><b>Description:</b> {selectedService.description}</div>
-            <div className="mb-2 text-gray-700"><b>Duration:</b> {selectedService.duration}</div>
+            <div className="mb-2 text-gray-700"><b>Price:</b> {selectedService.price}</div>
           </div>
         </div>
       )}

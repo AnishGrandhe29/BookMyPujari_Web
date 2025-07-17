@@ -5,7 +5,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
 
-const allServices = [
+type Service = {
+  title: string;
+  description: string;
+  price: string;
+  duration: string;
+  category: string;
+  image: string;
+};
+
+const allServices: Service[] = [
   {
     title: 'Griha Pravesh',
     description: 'Sacred housewarming ceremony for new homes with traditional rituals and blessings',
@@ -109,7 +118,7 @@ const categories = ['All', 'Home', 'Worship', 'Wedding', 'Festival'];
 export default function Services() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   const filteredServices = allServices.filter(service => {
     const matchesCategory = selectedCategory === 'All' || service.category === selectedCategory;
